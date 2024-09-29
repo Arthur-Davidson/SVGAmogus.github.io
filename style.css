@@ -1,0 +1,192 @@
+body {
+    background-color: rgb(1, 7, 57);
+}
+
+#amogus {
+    display: block;
+    width: 80%;
+    margin: 60px auto;
+}
+
+/* Cuerpo completo de Amogus */
+
+.cuerpo, .pieIzq, .pieDer, .mochila {
+    fill: #00A651;
+    stroke: #231F20;
+    stroke-width: 8;
+    stroke-miterlimit: 10;
+}
+
+.cuerpo {
+    animation: coloresShidas 7s infinite alternate, moverCuerpo 3s infinite;
+}
+.mochila {
+    animation: coloresShidas 7s infinite alternate, moverCuerpo 3.1s infinite;
+}
+.pieDer {
+    animation: coloresShidas 7s infinite alternate, moverPieDer 1s infinite;
+}
+.pieIzq {
+    animation: coloresShidas 7s infinite alternate, moverPieIzq 1s infinite;
+}
+
+/* Visor */
+
+.visor {
+    fill: #15C0DC;
+    stroke: #231F20;
+    stroke-width: 8;
+    stroke-miterlimit: 10;
+    animation: moverVisor 1s infinite;
+}
+.visorBrillo {
+    fill: #ACE1FA;
+    animation: moverVisor 1s infinite;
+}
+
+/* Among Us Titulo */
+
+.letraA, .letraM, .letraO, .letraN, .letraG, .letraU, .letraS {
+    fill: #2E3192;
+    stroke: #231F20;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+.letraA{
+    animation: moverLetra 1s infinite alternate;
+}
+.letraM{
+    animation: moverLetra 1.1s infinite alternate;
+}
+.letraO{
+    animation: moverLetra 1.2s infinite alternate;
+}
+.letraN{
+    animation: moverLetra 1.3s infinite alternate;
+}
+.letraG{
+    animation: moverLetra 1.4s infinite alternate;
+}
+.letraU{
+    animation: moverLetra 1.5s infinite alternate;
+}
+.letraS{
+    animation: moverLetra 1.6s infinite alternate;
+}
+/* Estrellas */
+
+.estrella {
+    fill: #00AEEF;
+    animation: titilar 1s infinite alternate;
+}
+
+
+/* Animaciones */
+
+@keyframes moverCuerpo {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 20px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes moverPieIzq {
+    0% {
+        transform: translate(0, 25px);
+    }
+
+    50% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 25px);
+    }
+}
+
+@keyframes moverPieDer {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 25px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes moverVisor {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes coloresShidas {
+    0% {
+        fill: #73570f;
+    }
+
+    25% {
+        fill: rgb(4, 4, 203);
+    }
+
+    50% {
+        fill: rgb(200, 7, 7);
+    }
+
+    75% {
+        fill: rgb(235, 251, 5);
+    }
+
+    100% {
+        fill: #00A651;
+    }
+}
+
+@keyframes titilar {
+    0% {
+        transform: translate(5px, 0);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+        fill: #ffffff;
+        stroke: #00AEEF;
+        stroke-width: 10px;
+    }
+
+    100% {
+        transform: translate(-7px, 0);
+    }
+}
+
+
+@keyframes moverLetra {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 20px);
+        fill: #ACE1FA;
+    }
+}
